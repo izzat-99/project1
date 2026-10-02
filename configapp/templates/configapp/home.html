@@ -1,0 +1,139 @@
+{% load static %}
+<!doctype html>
+<html lang="uz">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f3ed">
+    <meta name="description" content="Yuksal bilan zamonaviy kasblarni o‘rganing, amaliy loyihalar yarating va yangi imkoniyatlarga yo‘l oching.">
+    <title>Yuksal — bilimdan imkoniyat sari</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'configapp/css/landing.css' %}">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#bosh-sahifa" aria-label="Yuksal bosh sahifa">
+            <span class="brand-mark" aria-hidden="true">Y</span>
+            <span>yuksal<span class="brand-period">.</span></span>
+        </a>
+        <nav class="desktop-nav" aria-label="Asosiy navigatsiya">
+            <a href="#yonalishlar">Yo‘nalishlar</a>
+            <a href="#afzalliklar">Nega Yuksal?</a>
+            <a href="#jarayon">Qanday ishlaydi</a>
+        </nav>
+        <a class="header-cta" href="#aloqa">Kurs tanlash <span aria-hidden="true">↗</span></a>
+        <details class="mobile-menu">
+            <summary aria-label="Menyuni ochish"><span></span><span></span></summary>
+            <nav aria-label="Mobil navigatsiya">
+                <a href="#yonalishlar">Yo‘nalishlar</a>
+                <a href="#afzalliklar">Nega Yuksal?</a>
+                <a href="#jarayon">Qanday ishlaydi</a>
+                <a href="#aloqa">Kurs tanlash ↗</a>
+            </nav>
+        </details>
+    </header>
+
+    <main>
+        <section class="hero" id="bosh-sahifa">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-dot"></span> O‘RGANISHNING YANGI BOSQICHI</p>
+                <h1>Kelajagingiz uchun kerakli <span>bilim.</span></h1>
+                <p class="hero-lede">Zamonaviy kasblarni amaliyot orqali o‘rganing. Tajribali ustozlar va aniq yo‘l xaritasi bilan maqsadingizga dadil yuring.</p>
+                <div class="hero-actions">
+                    <a class="button button-dark" href="#yonalishlar">Yo‘nalishlarni ko‘rish <span aria-hidden="true">↗</span></a>
+                    <a class="text-link" href="#jarayon">Biz haqimizda <span aria-hidden="true">↓</span></a>
+                </div>
+                <div class="hero-proof">
+                    <div class="proof-avatars" aria-hidden="true"><span>SA</span><span>MK</span><span>DN</span></div>
+                    <p><strong>2 400+</strong><br>o‘quvchi o‘z yo‘lini boshladi</p>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=85" alt="Birgalikda o‘qib, loyiha ustida ishlayotgan yoshlar">
+                <div class="image-label"><span class="label-dot"></span><span>Bilim — yangi imkoniyatlar kaliti</span></div>
+                <div class="floating-note"><span class="note-kicker">SIZNING NAVBATDAGI QADAMINGIZ</span><strong>Bugun boshlang.<br>Ertaga o‘sing.</strong><span class="note-arrow" aria-hidden="true">↗</span></div>
+            </div>
+        </section>
+
+        <section class="metrics" aria-label="Yuksal raqamlarda">
+            <p class="metrics-intro">Maqsad sari<br><strong>birga o‘samiz.</strong></p>
+            <div class="metric"><strong>2 400<span>+</span></strong><span>faol o‘quvchi</span></div>
+            <div class="metric"><strong>18</strong><span>amaliy kurs</span></div>
+            <div class="metric"><strong>92<span>%</span></strong><span>tavsiya qiladi</span></div>
+            <p class="metrics-note">Katta natija<br>kichik qadamlardan boshlanadi.</p>
+        </section>
+
+        <section class="programs section-wrap" id="yonalishlar">
+            <div class="section-heading">
+                <div><p class="eyebrow">O‘ZINGIZGA MOS YO‘LNI TOPING</p><h2>Qiziqishingizni<br><span>kasbga aylantiring.</span></h2></div>
+                <p class="section-description">Har bir yo‘nalish haqiqiy loyihalar va kundalik ishda kerak bo‘ladigan ko‘nikmalar asosida tuzilgan.</p>
+            </div>
+            <div class="program-grid">
+                <article class="program-card program-green">
+                    <div class="card-topline"><span>01 / RAQAMLI MAHSULOT</span><span aria-hidden="true">↗</span></div>
+                    <div class="program-symbol symbol-green" aria-hidden="true">UX</div>
+                    <h3>UI/UX dizayn</h3>
+                    <p>Odamlar sevib ishlatadigan raqamli mahsulotlar dizaynini yarating.</p>
+                    <div class="card-meta"><span>12 hafta</span><span>Portfolio bilan</span></div>
+                </article>
+                <article class="program-card program-orange">
+                    <div class="card-topline"><span>02 / TEXNOLOGIYA</span><span aria-hidden="true">↗</span></div>
+                    <div class="program-symbol symbol-orange" aria-hidden="true">&lt;/&gt;</div>
+                    <h3>Frontend dasturlash</h3>
+                    <p>G‘oyalarni tezkor, chiroyli va qulay veb-saytlarga aylantiring.</p>
+                    <div class="card-meta"><span>16 hafta</span><span>Real loyihalar</span></div>
+                </article>
+                <article class="program-card program-blue">
+                    <div class="card-topline"><span>03 / IJOD VA MEDIA</span><span aria-hidden="true">↗</span></div>
+                    <div class="program-symbol symbol-blue" aria-hidden="true">✳</div>
+                    <h3>Grafik dizayn</h3>
+                    <p>Brendlar va hikoyalar uchun esda qolarli vizual yechimlar yarating.</p>
+                    <div class="card-meta"><span>10 hafta</span><span>Ustoz ko‘magida</span></div>
+                </article>
+            </div>
+            <a class="all-programs" href="#aloqa">Barcha yo‘nalishlar haqida so‘rash <span aria-hidden="true">→</span></a>
+        </section>
+
+        <section class="difference" id="afzalliklar">
+            <div class="difference-image">
+                <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1100&q=85" alt="Ustoz va o‘quvchilar birgalikda ishlamoqda" loading="lazy">
+                <span class="image-caption">Hamkorlikda o‘rganish — tezroq o‘sish</span>
+            </div>
+            <div class="difference-copy">
+                <p class="eyebrow">BIZNING YONDASHUV</p>
+                <h2>Faqat tinglamang.<br><span>Amalda yarating.</span></h2>
+                <p class="difference-lede">Yangi bilim o‘zgarishga aylanishi uchun uni qo‘llash kerak. Shu sababli Yuksalda har bir dars sizni haqiqiy natijaga yaqinlashtiradi.</p>
+                <div class="benefit-list">
+                    <div class="benefit"><span class="benefit-number">01</span><div><h3>Ustoz bilan yonma-yon</h3><p>Savollaringiz javobsiz qolmaydi: mentorlar har bosqichda yordam beradi.</p></div></div>
+                    <div class="benefit"><span class="benefit-number">02</span><div><h3>Portfolio uchun loyihalar</h3><p>Kurs davomida keyingi imkoniyatingizni ochadigan ishlar yaratasiz.</p></div></div>
+                    <div class="benefit"><span class="benefit-number">03</span><div><h3>O‘zingizga mos sur’at</h3><p>Darslar va amaliy vazifalarni qulay jadvalda, istalgan joydan bajaring.</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="steps section-wrap" id="jarayon">
+            <div class="steps-heading"><p class="eyebrow">BIRINCHI QADAM OSON</p><h2>Yo‘lingiz shu yerdan<br><span>boshlanadi.</span></h2></div>
+            <div class="steps-list">
+                <article class="step"><span class="step-index">01</span><div><h3>Yo‘nalishni tanlang</h3><p>Maqsadingiz va qiziqishingizga mos kursni toping.</p></div><span class="step-mark" aria-hidden="true">↗</span></article>
+                <article class="step"><span class="step-index">02</span><div><h3>Bepul maslahat oling</h3><p>Maslahatchimiz sizga kurs va o‘qish tartibini tushuntiradi.</p></div><span class="step-mark" aria-hidden="true">↗</span></article>
+                <article class="step"><span class="step-index">03</span><div><h3>O‘qishni boshlang</h3><p>Ustozingiz va yangi guruhingiz bilan maqsad sari harakat qiling.</p></div><span class="step-mark" aria-hidden="true">↗</span></article>
+            </div>
+        </section>
+
+        <section class="contact-band" id="aloqa">
+            <div><p class="eyebrow">KEYINGI QADAM SIZNIKI</p><h2>Yangi imkoniyatga<br>bugun yo‘l oching.</h2></div>
+            <div class="contact-action"><p>Qaysi yo‘nalish sizga mosligini bilmayapsizmi? Birga aniqlaymiz.</p><a class="button button-light" href="mailto:salom@yuksal.uz?subject=Kurs%20haqida%20maslahat">Bepul maslahat oling <span aria-hidden="true">↗</span></a></div>
+            <span class="contact-stamp" aria-hidden="true">O‘SISH<br>VAQTI</span>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="#bosh-sahifa"><span class="brand-mark" aria-hidden="true">Y</span><span>yuksal<span class="brand-period">.</span></span></a>
+        <p>Bilimdan imkoniyat sari.</p>
+        <a href="mailto:salom@yuksal.uz">salom@yuksal.uz</a>
+        <span>© 2026 Yuksal ta’lim platformasi</span>
+    </footer>
+</body>
+</html>
